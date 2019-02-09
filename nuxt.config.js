@@ -21,7 +21,12 @@ module.exports = {
       {
         rel: 'stylesheet',
         href:
-          'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons'
+          'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700'
+      },
+      {
+        rel: 'stylesheet',
+        href:
+          'https://fonts.googleapis.com/css?family=Material+Icons'
       }
     ]
   },
@@ -62,12 +67,12 @@ module.exports = {
         import: ["~assets/style/variables.styl"]
       }
     },
-    
+
     /*
     ** You can extend webpack config here
     */
     extend(config, ctx) {
-      
+
     }
   }
 }
