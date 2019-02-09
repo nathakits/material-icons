@@ -10,9 +10,9 @@
         h2 {{ iconarray.title.charAt(0).toUpperCase() + iconarray.title.slice(1) }}
         v-layout(row wrap)
           template(v-for="(svgs, index) in iconarray.svgs")
-            template(v-if="!svgs.match(/_48px.svg|_18px.svg|_36px.svg|battery|signal/g, '')")
+            template(v-if="!svgs.match(/_48px.svg|_12px.svg|_18px.svg|_36px.svg|battery|signal/g, '')")
               v-flex(xs3 sm3)
-                v-btn.mx-2(block)
+                v-btn.mx-2
                   v-icon {{ svgs.replace(/_24px.svg/g, '').replace(/\bic_/g, '') }}
                   span {{ svgs.replace(/_24px.svg/g, '').replace(/\bic_/g, '') }}
 
