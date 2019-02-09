@@ -27,7 +27,6 @@ const themes = [
 ]
 
 var arrJson = []
-let sd = '';
 
 for (let index = 0; index < themes.length; index++) {
   const element = themes[index];
