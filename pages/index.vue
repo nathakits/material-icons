@@ -2,11 +2,14 @@
   div
     h1 Material icons
 
+    v-layout(column wrap)
+      div.py-3(v-for="(iconarray, index) in arrIcons" :id="iconarray.title")
+        h2 {{ iconarray.title.charAt(0).toUpperCase() + iconarray.title.slice(1) }}
+        v-layout(row wrap)
+          template(v-for="(svgs, index) in iconarray.svgs")
+            v-flex(xs4 sm4)
+              p {{ svgs }}
 
-    div(v-for="(iconarray, index) in arrIcons" )
-      h1 {{ iconarray.title }}
-      div(v-for="(svgs, index) in iconarray.svgs")
-        p {{ svgs }}
 
 </template>
 
