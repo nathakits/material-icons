@@ -2,6 +2,14 @@
 
 > Material Design icons
 
+An alternative website for Materail Design icons primarily aimed at designers to quickly copy paste the svg code directly into their tools.
+
+## Notes
+
+Although Battery and Signal are present in the official Material Design website but they are removed from the official icon font. So it is unavailable right now until I implement the svgs myself instead of loading the icon font from Google stylesheet.
+
+https://github.com/google/material-design-icons/issues/181
+
 ## Build Setup
 
 ``` bash
