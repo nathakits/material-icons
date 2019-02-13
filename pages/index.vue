@@ -4,18 +4,16 @@
 
     v-layout(column wrap)
       div.py-3.fullWidth(
-        v-for="(iconarray, index) in arrSvgName"
-        :id="iconarray.category"
+        v-for="(iconarray, index) in arrIcons"
+        :id="iconarray.title"
       )
-        h2 {{ iconarray.category.charAt(0).toUpperCase() + iconarray.category.slice(1) }}
+        h2 {{ iconarray.title.charAt(0).toUpperCase() + iconarray.title.slice(1) }}
         v-layout(row wrap)
           template(v-for="(svgs, index) in iconarray.svgs")
             template(v-if="!svgs.match(/_48px.svg|_12px.svg|_18px.svg|_36px.svg|battery|signal/g, '')")
               v-flex(xs3 sm3)
                 v-btn.mx-2
-                  template(v-for="(path, index) in arrSvgPath")
-                    p {{ path }}
-                  //- v-icon {{ svgs.replace(/_24px.svg/g, '').replace(/\bic_/g, '') }}
+                  v-icon {{ svgs.replace(/_24px.svg/g, '').replace(/\bic_/g, '') }}
                   span {{ svgs.replace(/_24px.svg/g, '').replace(/\bic_/g, '') }}
 
 
@@ -24,14 +22,12 @@
 <script>
 import Logo from '~/components/Logo.vue'
 import VuetifyLogo from '~/components/VuetifyLogo.vue'
-import arrSvgName from '~/assets/material-icons-name.json'
-import arrSvgPath from '~/assets/material-icons-path.json'
+import arrIcons from '~/assets/material-icons.json'
 
 export default {
   data: () => {
     return {
-      arrSvgName,
-      arrSvgPath,
+      arrIcons,
     }
   },
   components: {
