@@ -2,7 +2,9 @@
 
 > Material Design icons
 
-An alternative website for Materail Design icons primarily aimed at designers to quickly copy paste the svg code directly into their tools.
+**THIS PROJECT IS ARCHIVED**
+
+An alternative website for Material Design icons primarily aimed at designers to quickly copy paste the svg code directly into their tools.
 
 ## Notes
 
